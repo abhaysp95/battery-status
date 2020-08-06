@@ -10,10 +10,10 @@ So, here's the script to fulfill the purpose
 Let's see what this can do:
 
 * **battery charging**:
-![bat_charging](sshots/battery_chargning.png)
+![bat_charging](sshots/battery_charging.png)
 
 * **battery_dischargning**:
-![bat_charging](sshots/battery_dischargning.png)
+![bat_charging](sshots/battery_discharging.png)
 
 
 This script gives the notification for different battery status like `charging, discharging, charged, and below critical level`
