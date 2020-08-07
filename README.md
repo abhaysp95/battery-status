@@ -20,13 +20,22 @@ This script gives the notification for different battery status like `charging, 
 
 Following options can be passed with script:
 * **--stat**: gives all 4 battery status notification
+* --critical: set the critical level first time when you run the script for the first time as `./alert_battery.sh --critical 25`
 * **--help**: shows help menu
 * **no option**: no option only runs the script to show the notification when battery reaches critical level
 
-It is recommended to use this script with `cronjob` or some other job schedular if you are running script with no option
+It is recommended to use ~~this script~~ `alert_battery_wrapper.sh` with `cronjob` or some other job schedular if you are running script with no option
 
-For showing all 4 status script should run every second, so that it can detect battery status
+For showing all 4 status script should run continuously, so that it can detect battery status
 
+
+## alert_battery_wrapper.sh
+
+This script is the wrapper script for `alert_battery.sh` script, which means after setting the critical level with the `alert_battery.sh` script, run this script.
+
+You should provide this script to `.xinitrc` or some other sort of startup uitility and this will the run the above script in loop.
+
+But, if you just want to display only critical state, don't use this script, use `alert_battery.sh` (without any arg).
 
 ## caffeine_like
 
