@@ -24,7 +24,7 @@ Following options can be passed with script:
 * **--help**: shows help menu
 * **no option**: no option only runs the script to show the notification when battery reaches critical level
 
-It is recommended to use ~~this script~~ `alert_battery_wrapper.sh` with `cronjob` or some other job schedular if you are running script with no option
+It is recommended to use this script with `cronjob` ~~or some other job schedular~~ if you are running script with no option
 
 For showing all 4 status script should run continuously, so that it can detect battery status
 
