@@ -12,7 +12,7 @@ Let's see what this can do:
 * **battery charging**:
 ![bat_charging](sshots/battery_charging.png)
 
-* **battery_dischargning**:
+* **battery_discharging**:
 ![bat_charging](sshots/battery_discharging.png)
 
 
@@ -33,7 +33,7 @@ For showing all 4 status script should run continuously, so that it can detect b
 
 This script is the wrapper script for `alert_battery.sh` script, which means after setting the critical level with the `alert_battery.sh` script, run this script.
 
-You should provide this script to `.xinitrc` or some other sort of startup uitility and this will the run the above script in loop.
+You should provide this script to `.xinitrc` or some other sort of startup utility and this will the run the above script in loop.
 
 But, if you just want to display only critical state, don't use this script, use `alert_battery.sh` (without any arg).
 
@@ -43,7 +43,7 @@ Mimicking the caffeine features from `DE`:
 
 ![caffeine](sshots/caffiene_like.png)
 
-Give a keybind to this script, and toggle the caffiene feature
+Give a key-binding to this script, and toggle the caffeine feature
 
 Also, I don't like my computer turn its screen off every 5 minute, so I have give this script to `.xprofile`
 
